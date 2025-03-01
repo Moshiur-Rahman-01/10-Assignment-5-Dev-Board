@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Board</title>
+    <!-- DaisyUI cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- css -->
+    <style>
+        .poppins{
+            font-family: "Poppins", sans-serif;
+        }
+        .color1{
+            color: #00303C;
+        }
+    </style>
+</head>
+<body class="bg-indigo-50 poppins">
+    <header class="container mx-auto py-6">
+        <!-- nav bar -->
+        <nav class="flex justify-between bg-white px-6 py-4 rounded-2xl">
+            <!-- left side -->
+            <div class="flex items-center gap-2">
+                <img src="assets/logo.png" alt="">
+                <h1 class="text-[#00303C] font-light text-4xl">Dev<span class="font-bold">Board</span></h1>
+            </div>
+            <!-- right side -->
+            <div class="flex items-center gap-10">
+                <div class="flex items-center gap-2 bg-indigo-50 rounded-3xl p-2">
+                    <input type="checkbox" checked="checked" class="checkbox checkbox-primary" />
+                    <h1 class="font-bold text-3xl text-[#1e1e1e]">23</h1>
+                </div>
+                <img class="p-2 bg-indigo-50 rounded-full" src="assets/theme-btn.png" alt="">
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto flex  gap-6">
+        <!-- total main section -->
+        <section class="w-9/12">
+            <section class="grid grid-cols-3 bg-white p-6 rounded-2xl gap-6">
+                <!-- card-1 -->
+                <div class="col-span-3">
+                    <div class="flex gap-6">
+                        <!-- sub card-1 -->
+                        <div class="p-6 flex w-3/12 items-center gap-5 bg-indigo-50 rounded-2xl">
+                            <div class="p-3 bg-white rounded-full">
+                                <input type="checkbox" checked="checked" class="checkbox checkbox-primary" />
+                            </div>
+                            <div class="text-[#00303c]">
+                                <p class="font-medium opacity-80 ">Task Assigned</p>
+                                <h1 class="font-bold text-3xl">05</h1>
+                            </div>
+                        </div>
+                        <!-- sub card-2 -->
+                        <div
+                            class="p-6 flex w-6/12 items-center gap-5 rounded-2xl bg-gradient-to-r from-[#3752fd] via-[#6c7ffa] to-[#9ba8f8]">
+                            <img src="assets/board.png" alt="">
+                            <h1 class="text-white font-medium text-2xl">Discover Something <br>
+                                New Today!</h1>
+                        </div>
+                        <!-- sub card-3 -->
+                        <div class="p-6 flex w-3/12 items-center gap-5 bg-indigo-50 rounded-2xl">
+                            <div class="p-3 bg-white rounded-full">
+                                <img src="assets/calender.png" alt="">
+                            </div>
+                            <div class="text-[#00303c]">
+                                <p class="text-2xl">Wed ,
+                                    <br>
+                                    <span class="font-bold">
+                                        Jul 28 2025
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="col-span-3 my-3 border-dashed border-2 border-indigo-50">
+                <!-- card-3 -->
+                <div class="bg-indigo-50 rounded-2xl p-6">
+                    <p class="color1 bg-white inline-block px-4 py-2 rounded-lg">ShopEase</p>
+                    <h1 class="my-4 color1 font-medium text-2xl">Fix Mobile Button Issue</h1>
+                    <div class="bg-white rounded-lg">
+                        <p class="opacity-50 p-4 mb-4 ">Debug using Chrome DevTools, check for overlapping elements, and
+                            ensure onClick works properly</p>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <div class="color1">
+                            <p class="opacity-70 text-sm">Deadline</p>
+                            <h3 class="font-medium">21 March 2025</h3>
+                        </div>
+                        <button class="btn text-white bg-[#3752fd] border-none rounded-lg">Completed</button>
+                    </div>
+                </div>
+                
+                <!-- card-4 -->
+                <div class="bg-indigo-50 rounded-2xl p-6">
+                    <p class="color1 bg-white inline-block px-4 py-2 rounded-lg">CloudSync</p>
+                    <h1 class="my-4 color1 font-medium text-2xl">Add Dark Mode</h1>
+                    <div class="bg-white rounded-lg">
+                        <p class="opacity-50 p-4 mb-4 ">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <div class="color1">
+                            <p class="opacity-70 text-sm">Deadline</p>
+                            <h3 class="font-medium">21 March 2025</h3>
+                        </div>
+                        <button class="btn text-white bg-[#3752fd] border-none rounded-lg">Completed</button>
+                    </div>
+                </div>
+
+                <!-- card-5 -->
+                <div class="bg-indigo-50 rounded-2xl p-6">
+                    <p class="color1 bg-white inline-block px-4 py-2 rounded-lg">SwiftPay</p>
+                    <h1 class="my-4 color1 font-medium text-2xl">Optimize Home page</h1>
+                    <div class="bg-white rounded-lg">
+                        <p class="opacity-50 p-4 mb-4 ">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <div class="color1">
+                            <p class="opacity-70 text-sm">Deadline</p>
+                            <h3 class="font-medium">21 March 2025</h3>
+                        </div>
+                        <button class="btn text-white bg-[#3752fd] border-none rounded-lg">Completed</button>
+                    </div>
+                </div>
+
+                <!-- card-6 -->
+                <div class="bg-indigo-50 rounded-2xl p-6">
+                    <p class="color1 bg-white inline-block px-4 py-2 rounded-lg">Meta</p>
+                    <h1 class="my-4 color1 font-medium text-2xl">Add new emoji 🤲</h1>
+                    <div class="bg-white rounded-lg">
+                        <p class="opacity-50 p-4 mb-4 ">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <div class="color1">
+                            <p class="opacity-70 text-sm">Deadline</p>
+                            <h3 class="font-medium">21 March 2025</h3>
+                        </div>
+                        <button class="btn text-white bg-[#3752fd] border-none rounded-lg">Completed</button>
+                    </div>
+                </div>
+
+                <!-- card-7 -->
+                <div class="bg-indigo-50 rounded-2xl p-6">
+                    <p class="color1 bg-white inline-block px-4 py-2 rounded-lg">Google LLC</p>
+                    <h1 class="my-4 color1 font-medium text-2xl">Integrate OpenAI API</h1>
+                    <div class="bg-white rounded-lg">
+                        <p class="opacity-50 p-4 mb-4 ">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <div class="color1">
+                            <p class="opacity-70 text-sm">Deadline</p>
+                            <h3 class="font-medium">21 March 2025</h3>
+                        </div>
+                        <button class="btn text-white bg-[#3752fd] border-none rounded-lg">Completed</button>
+                    </div>
+                </div>
+
+                <!-- card-8 -->
+                <div class="bg-indigo-50 rounded-2xl p-6">
+                    <p class="color1 bg-white inline-block px-4 py-2 rounded-lg">Glassdoar</p>
+                    <h1 class="my-4 color1 font-medium text-2xl">Improve Job searching</h1>
+                    <div class="bg-white rounded-lg">
+                        <p class="opacity-50 p-4 mb-4 ">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <div class="color1">
+                            <p class="opacity-70 text-sm">Deadline</p>
+                            <h3 class="font-medium">21 March 2025</h3>
+                        </div>
+                        <button class="btn text-white bg-[#3752fd] border-none rounded-lg">Completed</button>
+                    </div>
+                </div>
+
+            </section> 
+        </section>
+        <!-- card-2 -->
+        <div class="w-1/4 bg-white pt-4 rounded-2xl">
+            <div class="text-center">
+                <div class="flex items-center justify-center gap-4 mb-4">
+                    <img src="assets/activity.png" alt="">
+                    <p>activity Log</p>
+                </div>
+                <button class="btn text-white bg-[#3752fd] border-none rounded-lg">Clear History</button>
+            </div>
+            <hr class="my-3 border-dashed border-2 border-indigo-50">
+        
+            <!-- history -->
+            <div class="p-7 space-y-7 opacity-70">
+                <p class="bg-indigo-50 p-2 rounded-lg">You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
+                <p class="bg-indigo-50 p-2 rounded-lg">You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
