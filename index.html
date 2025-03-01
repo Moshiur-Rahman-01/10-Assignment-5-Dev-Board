@@ -36,7 +36,7 @@
             <div class="flex items-center gap-10">
                 <div class="flex items-center gap-2 bg-indigo-50 rounded-3xl p-2">
                     <input type="checkbox" checked="checked" class="checkbox checkbox-primary" />
-                    <h1 class="font-bold text-3xl text-[#1e1e1e]">23</h1>
+                    <h1 id="increase" class="font-bold text-3xl text-[#1e1e1e]">23</h1>
                 </div>
                 <button><img class="p-2 bg-indigo-50 rounded-full" src="assets/theme-btn.png" alt=""></button>
             </div>
@@ -57,11 +57,11 @@
                             </div>
                             <div class="text-[#00303c]">
                                 <p class="font-medium opacity-80 ">Task Assigned</p>
-                                <h1 class="font-bold text-3xl">6</h1>
+                                <h1 id="decrease" class="font-bold text-3xl">6</h1>
                             </div>
                         </div>
                         <!-- sub card-2 -->
-                        <div
+                        <div id="QA"
                             class="p-6 flex w-6/12 items-center gap-5 rounded-2xl bg-gradient-to-r from-[#3752fd] via-[#6c7ffa] to-[#9ba8f8]">
                             <img src="assets/board.png" alt="">
                             <h1 class="text-white font-medium text-2xl">Discover Something <br>
@@ -73,11 +73,7 @@
                                 <img src="assets/calender.png" alt="">
                             </div>
                             <div class="text-[#00303c]">
-                                <p class="text-2xl">Wed ,
-                                    <br>
-                                    <span class="font-bold">
-                                        Jul 28 2025
-                                    </span>
+<p id="currentDate" class="font-semibold">
                                 </p>
                             </div>
                         </div>
@@ -87,7 +83,7 @@
                 <!-- card-3 -->
                 <div class="bg-indigo-50 rounded-2xl p-6">
                     <p class="color1 bg-white inline-block px-4 py-2 rounded-lg">ShopEase</p>
-                    <h1 class="my-4 color1 font-medium text-2xl">Fix Mobile Button Issue</h1>
+                    <h1 id="title-1" class="my-4 color1 font-medium text-2xl">Fix Mobile Button Issue</h1>
                     <div class="bg-white rounded-lg">
                         <p class="opacity-50 p-4 mb-4 ">Debug using Chrome DevTools, check for overlapping elements, and
                             ensure onClick works properly</p>
@@ -97,14 +93,14 @@
                             <p class="opacity-70 text-sm">Deadline</p>
                             <h3 class="font-medium">21 March 2025</h3>
                         </div>
-                        <button class="btn text-white bg-[#3752fd] border-none rounded-lg">Completed</button>
+                        <button id="btn-1" class="btn text-white bg-[#3752fd] border-none rounded-lg" >Completed</button>
                     </div>
                 </div>
                 
                 <!-- card-4 -->
                 <div class="bg-indigo-50 rounded-2xl p-6">
                     <p class="color1 bg-white inline-block px-4 py-2 rounded-lg">CloudSync</p>
-                    <h1 class="my-4 color1 font-medium text-2xl">Add Dark Mode</h1>
+                    <h1 id="title-2" class="my-4 color1 font-medium text-2xl">Add Dark Mode</h1>
                     <div class="bg-white rounded-lg">
                         <p class="opacity-50 p-4 mb-4 ">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
                     </div>
@@ -113,14 +109,14 @@
                             <p class="opacity-70 text-sm">Deadline</p>
                             <h3 class="font-medium">21 March 2025</h3>
                         </div>
-                        <button class="btn text-white bg-[#3752fd] border-none rounded-lg">Completed</button>
+                        <button id="btn-2" class="btn text-white bg-[#3752fd] border-none rounded-lg">Completed</button>
                     </div>
                 </div>
 
                 <!-- card-5 -->
                 <div class="bg-indigo-50 rounded-2xl p-6">
                     <p class="color1 bg-white inline-block px-4 py-2 rounded-lg">SwiftPay</p>
-                    <h1 class="my-4 color1 font-medium text-2xl">Optimize Home page</h1>
+                    <h1 id="title-3" class="my-4 color1 font-medium text-2xl">Optimize Home page</h1>
                     <div class="bg-white rounded-lg">
                         <p class="opacity-50 p-4 mb-4 ">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
                     </div>
@@ -129,14 +125,14 @@
                             <p class="opacity-70 text-sm">Deadline</p>
                             <h3 class="font-medium">21 March 2025</h3>
                         </div>
-                        <button class="btn text-white bg-[#3752fd] border-none rounded-lg">Completed</button>
+                        <button id="btn-3" class="btn text-white bg-[#3752fd] border-none rounded-lg">Completed</button>
                     </div>
                 </div>
 
                 <!-- card-6 -->
                 <div class="bg-indigo-50 rounded-2xl p-6">
                     <p class="color1 bg-white inline-block px-4 py-2 rounded-lg">Meta</p>
-                    <h1 class="my-4 color1 font-medium text-2xl">Add new emoji 🤲</h1>
+                    <h1 id="title-4" class="my-4 color1 font-medium text-2xl">Add new emoji 🤲</h1>
                     <div class="bg-white rounded-lg">
                         <p class="opacity-50 p-4 mb-4 ">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
                     </div>
@@ -145,14 +141,14 @@
                             <p class="opacity-70 text-sm">Deadline</p>
                             <h3 class="font-medium">21 March 2025</h3>
                         </div>
-                        <button class="btn text-white bg-[#3752fd] border-none rounded-lg">Completed</button>
+                        <button  id="btn-4" class="btn text-white bg-[#3752fd] border-none rounded-lg">Completed</button>
                     </div>
                 </div>
 
                 <!-- card-7 -->
                 <div class="bg-indigo-50 rounded-2xl p-6">
                     <p class="color1 bg-white inline-block px-4 py-2 rounded-lg">Google LLC</p>
-                    <h1 class="my-4 color1 font-medium text-2xl">Integrate OpenAI API</h1>
+                    <h1 id="title-5" class="my-4 color1 font-medium text-2xl">Integrate OpenAI API</h1>
                     <div class="bg-white rounded-lg">
                         <p class="opacity-50 p-4 mb-4 ">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
                     </div>
@@ -161,14 +157,14 @@
                             <p class="opacity-70 text-sm">Deadline</p>
                             <h3 class="font-medium">21 March 2025</h3>
                         </div>
-                        <button class="btn text-white bg-[#3752fd] border-none rounded-lg">Completed</button>
+                        <button id="btn-5" class="btn text-white bg-[#3752fd] border-none rounded-lg">Completed</button>
                     </div>
                 </div>
 
                 <!-- card-8 -->
                 <div class="bg-indigo-50 rounded-2xl p-6">
                     <p class="color1 bg-white inline-block px-4 py-2 rounded-lg">Glassdoar</p>
-                    <h1 class="my-4 color1 font-medium text-2xl">Improve Job searching</h1>
+                    <h1 id="title-6" class="my-4 color1 font-medium text-2xl">Improve Job searching</h1>
                     <div class="bg-white rounded-lg">
                         <p class="opacity-50 p-4 mb-4 ">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
                     </div>
@@ -177,7 +173,7 @@
                             <p class="opacity-70 text-sm">Deadline</p>
                             <h3 class="font-medium">21 March 2025</h3>
                         </div>
-                        <button class="btn text-white bg-[#3752fd] border-none rounded-lg">Completed</button>
+                        <button id="btn-6" class="btn text-white bg-[#3752fd] border-none rounded-lg">Completed</button>
                     </div>
                 </div>
 
@@ -190,13 +186,13 @@
                     <img src="assets/activity.png" alt="">
                     <p>activity Log</p>
                 </div>
-                <button class="btn text-white bg-[#3752fd] border-none rounded-lg">Clear History</button>
+                <button id="btn-history" class="btn text-white bg-[#3752fd] border-none rounded-lg">Clear History</button>
             </div>
             <hr class="my-3 border-dashed border-2 border-indigo-50">
         
             <!-- history -->
-            <div class="p-7 space-y-7 opacity-70">
-                <p class="bg-indigo-50 p-2 rounded-lg">You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
+            <div id="comments" class="p-7 space-y-7 opacity-70">
+                
                 <p class="bg-indigo-50 p-2 rounded-lg">You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
             </div>
         </div>
@@ -208,5 +204,6 @@
     <script src="script/clrhistory.js"></script>
     <script src="script/completed.js"></script>
     <script src="script/QA.js"></script>
+    <script src="script/date.js"></script>
 </body>
 </html>
