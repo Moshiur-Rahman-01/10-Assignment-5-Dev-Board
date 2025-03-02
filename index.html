@@ -24,21 +24,21 @@
     </style>
 </head>
 <body class="bg-indigo-50 poppins">
-    <header class="container mx-auto py-6">
+    <header class="container mx-auto sm:py-6 py-3">
         <!-- nav bar -->
-        <nav class="flex justify-between bg-white px-6 py-4 rounded-2xl">
+        <nav class="flex justify-between bg-white sm:px-6 px-3 sm:py-4 py-2 rounded-2xl">
             <!-- left side -->
             <div class="flex items-center gap-2">
-                <img src="assets/logo.png" alt="">
-                <h1 class="text-[#00303C] font-light text-4xl">Dev<span class="font-bold">Board</span></h1>
+                <img class="w-[20%] sm:w-full" src="assets/logo.png" alt="">
+                <h1 class="text-[#00303C] font-light sm:text-4xl text-xl">Dev<span class="font-bold">Board</span></h1>
             </div>
             <!-- right side -->
-            <div class="flex items-center gap-10">
+            <div class="flex items-center sm:gap-10 gap-3">
                 <div class="flex items-center gap-2 bg-indigo-50 rounded-3xl p-2">
                     <input type="checkbox" checked="checked" class="checkbox checkbox-primary" />
-                    <h1 id="increase" class="font-bold text-3xl text-[#1e1e1e]">23</h1>
+                    <h1 id="increase" class="font-bold sm:text-3xl text-xl text-[#1e1e1e]">23</h1>
                 </div>
-                <button id="randomColor"><img class="p-2 bg-indigo-50 rounded-full" src="assets/theme-btn.png" alt=""></button>
+                <button id="randomColor"><img class="p-2 bg-indigo-50 rounded-full w-[80%] sm:w-full" src="assets/theme-btn.png" alt=""></button>
             </div>
         </nav>
     </header>
