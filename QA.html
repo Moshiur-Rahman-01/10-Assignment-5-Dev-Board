@@ -43,35 +43,55 @@
         <div class="bg-white">
             <p class="p-4 rounded font-bold">Question-1: What are the different ways to select an element in the DOM? </p>
             <hr class="border-dashed border-indigo-50">
-            <p class="p-4 rounded">There are many different ways to select an element in the DOM. such as
-            1. Id selector
-            2. Tag name selector
-            3. Class name selector
+            <p class="p-4 rounded">There are many different ways to select an element in the DOM. such as <br>
+            1. Id selector <br>
+            2. Tag name selector <br>
+            3. Class name selector <br>
             4. css style class name selector etc.
             </p>
         </div>
         <div class="bg-white">
             <p class=" p-4 rounded font-bold">Question-2: What is the difference between innerHTML, innerText, and textContent ?</p>
             <hr class="border-dashed border-indigo-50">
-            <p class="p-4 rounded"></p>
+            <p class="p-4 rounded">innerHTML: HTML সহ টেক্সট রিটার্ন ও সেট করে <br>
+            innerText: শুধু দেখা যায় এমন টেক্সট নেয় <br>
+            textContent: সব টেক্সট access newa jai (লুকানো থাকলেও)</p>
         </div>
         <div class="bg-white">
             <p class=" p-4 rounded font-bold">Question-3: What is event delegation in the DOM?
             </p>
             <hr class="border-dashed border-indigo-50">
-            <p class="p-4 rounded"></p>
+            <p class="p-4 rounded">Event Delegation হলো একটি parent element er ওপর Event Listener add করা, যাতে তার child এলিমেন্টগুলোর Event handle করা যায়।</p>
         </div>
         <div class="bg-white">
             <p class=" p-4 rounded font-bold">Question-4: What is event bubbling in the DOM?
             </p>
             <hr class="border-dashed border-indigo-50">
-            <p class="p-4 rounded"></p>
+            <p class="p-4 rounded">It is a behavior of DOM Event, যেখানে একটি child এলিমেন্টে Event ঘটলে, সেটি parent element পর্যন্ত bubble উঠে যায়।</p>
         </div>
         <div class="bg-white">
             <p class=" p-4 rounded font-bold">Question-5: How do you create, add, and remove elements using JavaScript?
             </p>
             <hr class="border-dashed border-indigo-50">
-            <p class="p-4 rounded"></p>
+            <p class="p-4 rounded">
+                <pre>
+                    function commentsAdd(title,id){
+                    const comment = document.getElementById(id);
+
+                    // create element...
+                    const p = document.createElement("p");
+                    p.innerHTML = `
+                    You have Complete The Task.
+                    `
+
+                    // add element...
+                    comment.appendChild(p);
+
+                    // remove element...
+                    comment.removeChild(p);
+                    }
+                </pre>
+            </p>
         </div>
 
     </main>

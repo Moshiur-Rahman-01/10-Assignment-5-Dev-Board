@@ -17,10 +17,11 @@ function disableButton(id){
 
 function commentsAdd(title,id){
     const comment = document.getElementById(id);
+    const now = new Date().toLocaleTimeString();
     const t = document.getElementById(title).innerText;
     const p = document.createElement("p");
     p.innerHTML = `
-        <p class="bg-indigo-50 p-2 rounded-lg">You have Complete The Task ${t} at 12:48:15 PM</p>
+        <p class="bg-indigo-50 p-2 rounded-lg">You have Complete The Task ${t} at ${now}</p>
     `
     comment.appendChild(p);
 }
